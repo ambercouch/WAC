@@ -14,11 +14,15 @@
   <!--  Modernizr-->
   <script src="<?php echo get_template_directory_uri(); ?>/js/libs/modernizr-2.0.6.min.js"></script>
 
-  <?php // roots_head(); ?>
-  <?php wp_head(); ?>
+  <!--  jQuery-->
+<!--  <script-->
+<!--      src="https://code.jquery.com/jquery-2.2.4.min.js"-->
+<!--      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="-->
+<!--      crossorigin="anonymous">-->
+<!--  </script>-->
 
   <?php if (is_page(3863)) { ?>
-    <?php // Interactive farm map page ?>
+  <?php // Interactive farm map page ?>
     <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/libs/jquery.rwdImageMaps.min.js"></script>
     <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/libs/magnific/magnific.min.js"></script>
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/js/libs/magnific/magnific.min.css">
@@ -27,10 +31,10 @@
   <script type="text/javascript" src="http://use.typekit.com/xxr1gfe.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-  <?php // analytics - now added via consent plugin ?>
-  <!-- <script>
+  <?php // analytics ?>
+  <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');    ga('create', 'UA-341586-3', 'walescottages.com', {'allowLinker': true});    ga('require', 'linker');    ga('linker:autoLink', ['secure.supercontrol.co.uk']);    ga('send', 'pageview');
-  </script> -->
+  </script>
 
   <script type='application/ld+json'>
 {
@@ -70,11 +74,15 @@
   }
 }
  </script>
+
+  <?php wp_head(); ?>
+  <?php roots_head(); ?>
+
 </head>
 
 <div <?php body_class(roots_body_class()); ?>>
 
-  <div id="wrap" class="container WF" role="document">
+  <div id="wrap" class="container" role="document">
   	<header id="banner" class="<?php global $roots_options; echo $roots_options['container_class']; ?>" role="banner">
       <div class="container">
         <a class="header-segment" id="logo" href="<?php echo home_url(); ?>/">
@@ -87,7 +95,7 @@
           <ul>
             <?php wp_nav_menu(array('theme_location' => 'primary_navigation', 'items_wrap' => '%3$s')); ?>
             <li>
-              <a href="http://secure.supercontrol.co.uk/availability/availability_grid.asp?ownerID=2599&siteID=12637" onclick="_gaq.push(['_link', 'http://secure.supercontrol.co.uk/availability/availability_grid.asp?ownerID=2599&siteID=12637']); return false;">book your cottage</a>
+              <a href="https://secure.supercontrol.co.uk/availability/availability_grid.asp?ownerID=2599&siteID=12637" onclick="_gaq.push(['_link', 'https://secure.supercontrol.co.uk/availability/availability_grid.asp?ownerID=2599&siteID=12637']); return false;">book your cottage</a>
             </li>
           </ul>
         </nav>
@@ -116,7 +124,7 @@
           <nav id="nav-main" role="navigation">
             <ul>
               <?php wp_nav_menu(array('theme_location' => 'primary_navigation', 'items_wrap' => '%3$s')); ?>
-              <li><a class="book-button" id="menu-book-your-cottage" href="http://secure.supercontrol.co.uk/availability/availability_grid.asp?ownerID=2599&siteID=12637" onclick="_gaq.push(['_link', 'http://secure.supercontrol.co.uk/availability/availability_grid.asp?ownerID=2599&siteID=12637']); return false;">book your cottage</a></li>
+              <li><a class="book-button" id="menu-book-your-cottage" href="https://secure.supercontrol.co.uk/availability/availability_grid.asp?ownerID=2599&siteID=12637" onclick="_gaq.push(['_link', 'https://secure.supercontrol.co.uk/availability/availability_grid.asp?ownerID=2599&siteID=12637']); return false;">book your cottage</a></li>
             </ul>
           </nav>
         </div>

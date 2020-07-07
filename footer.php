@@ -12,7 +12,7 @@
         <div class="wrapper">
           <?php dynamic_sidebar('roots-footer'); ?>
         </div>
-        <!--/can you see me?-->
+
         <div class="copy">
           <nav class="nav-social">
             <ul>
@@ -105,7 +105,7 @@
           },
         ],
     };
-    console.log("Can you see me?");
+    
     CookieControl.load( config );
 </script>
 

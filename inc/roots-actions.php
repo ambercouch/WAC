@@ -62,7 +62,7 @@ function roots_get_stylesheets() {
     $styles .= stylesheet_link_tag('/style.css', 1);
     $styles .= "\t<link rel=\"stylesheet\" href=\"" . get_stylesheet_uri(). "\">\n";
   } else {
-    $styles .= stylesheet_link_tag('/style.css', 1);
+    $styles .= stylesheet_link_tag('/style-1.css', 1);
   }
 
   switch ($roots_css_framework) {
