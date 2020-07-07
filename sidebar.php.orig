@@ -1,0 +1,51 @@
+	<a href="http://secure.supercontrol.co.uk/availability/availability_grid.asp?ownerID=2599&siteID=12637" onclick="_gaq.push(['_link', 'http://secure.supercontrol.co.uk/availability/availability_grid.asp?ownerID=2599&siteID=12637']); return false;">
+		<div class="cta button-booknow">
+			<span>book now</span><br>
+			or check availability
+		</div>
+	</a>
+
+<<<<<<< HEAD
+	<div id="TA_cdsratingsonlynarrow229" class="TA_cdsratingsonlynarrow">
+    <ul id="BExcRynbB95P" class="TA_links 5scDi4OEy7x">
+      <li id="Ds6Md8TgC7" class="tv7qA9G">
+=======
+	<div id="TA_cdsratingsonlywide171" class="TA_cdsratingsonlywide">
+    <ul id="l9KKgCXNNrl" class="TA_links lQ6gjrm3FkvG">
+      <li id="8O8QK1gB" class="nU8y4qv">
+>>>>>>> refs/heads/master
+        <a id="CDSLOCINNER" target="_blank" href="http://www.tripadvisor.co.uk/Hotel_Review-g1644097-d2056930-Reviews-Swansea_Valley_Holiday_Cottages-Pontardawe_Vale_of_Glamorgan_Southern_Wales_Wales.html" onclick="ta.cds.handleTALink($cdsConfig.getMcid()); return true;">Swansea Valley Holiday Cottages</a>
+      </li>
+    </ul>
+  </div>
+<<<<<<< HEAD
+  <script src="http://www.jscache.com/wejs?wtype=cdsratingsonlynarrow&amp;uniq=229&amp;locationId=2056930&amp;lang=en_UK&amp;border=false&amp;shadow=false&amp;backgroundColor=white"></script>
+
+=======
+  <script src="http://www.jscache.com/wejs?wtype=cdsratingsonlywide&amp;uniq=171&amp;locationId=2056930&amp;lang=en_UK&amp;border=false&amp;shadow=false&amp;backgroundColor=gray"></script>
+>>>>>>> refs/heads/master
+
+
+<?php if(!is_front_page()) { ?>
+	<a href="index.php?p=3224">
+    <div class="cta plan">
+    	<span>plan your trip</span><br>with our handy guide
+    </div>
+  </a>
+
+  <a href="index.php?p=17">
+    <div class="cta tour">
+    	choose your<br><span>holiday cottage</span>
+    </div>
+  </a>
+<?php } ?>
+
+	<div class="badges">
+		<a href="http://www.visitwales.co.uk/"><img src="<?php bloginfo('template_url'); ?>/img/logos/logo-visitwales.png" alt="Visit Wales"></a>
+		<a href="http://www.tourismswanseabay.co.uk/index.asp"><img src="<?php bloginfo('template_url'); ?>/img/logos/logo-SBTourism.png" alt="Swansea Bay Tourism Award - Highly Commended"></a>
+		<img src="<?php bloginfo('template_url'); ?>/img/logos/logo-wifi.png" alt="Free WiFi in all our cottages">
+	</div>
+
+	<div class="social">
+		<?php dynamic_sidebar('roots-sidebar'); ?>
+	</div>

@@ -1,0 +1,16 @@
+<?php global $folder; ?>
+<div class="flexslider">
+	<ul class="slides">			
+			<li><img src="<?php bloginfo('template_url'); ?>/img/slides/frontpage/waterfall.jpg" alt="waterfall" width="960" height="330" /></li>
+			<li><img src="<?php bloginfo('template_url'); ?>/img/slides/frontpage/surfers.jpg" alt="surfers" width="960" height="330" /></li>
+			<li><img src="<?php bloginfo('template_url'); ?>/img/slides/frontpage/sunset.jpg" alt="sunset" width="960" height="330" /></li>
+			<li><img src="<?php bloginfo('template_url'); ?>/img/slides/frontpage/green-landscape.jpg" alt="green hills" width="960" height="330" /></li>
+			<li><img src="<?php bloginfo('template_url'); ?>/img/slides/frontpage/photographer.jpg" alt="photographer on the beach" width="960" height="330" /></li>			
+			<li><img src="<?php bloginfo('template_url'); ?>/img/slides/frontpage/snowy-mountain.jpg" alt="snowy mountainside" width="960" height="330" /></li>			
+	</ul>
+</div><!-- flexslider -->
+
+<div class="info-band">
+	<span class="testimonial">&ldquo;this is a short testimonial summing up the theme in a few words&rdquo;</span>
+	<span class="cono">call us on 01792 864 611</span>
+</div>

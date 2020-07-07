@@ -1,0 +1,8 @@
+/**
+ * jQuery.Preload - Multifunctional preloader
+ * Copyright (c) 2008 Ariel Flesler - aflesler(at)gmail(dot)com
+ * Dual licensed under MIT and GPL.
+ * Date: 3/25/2009
+ * @author Ariel Flesler
+ * @version 1.0.8
+ */(function(e){var t=e.preload=function(n,r){function u(i){s.element=this;s.found=i.type=="load";s.image=this.src;s.index=this.index;var u=s.original=n[this.index];s[s.found?"loaded":"failed"]++;s.done++;r.enforceCache&&t.cache.push(e("<img/>").attr("src",s.image)[0]);r.placeholder&&u.src&&(u.src=s.found?s.image:r.notFound||u.src);r.onComplete&&r.onComplete(s);if(s.done<s.total)a(0,this);else{o&&o.unbind&&o.unbind("load").unbind("error").unbind("abort");o=null;f()}}function a(e,o,u){if(o.attachEvent&&s.next&&s.next%t.gap==0&&!u){setTimeout(function(){a(e,o,1)},0);return!1}if(s.next==s.total)return!1;o.index=s.next;o.src=i[s.next++];if(r.onRequest){s.index=o.index;s.element=o;s.image=o.src;s.original=n[s.next-1];r.onRequest(s)}}function f(){r.onFinish&&r.onFinish(s)}n.split&&(n=e(n));r=e.extend({},t.defaults,r);var i=e.map(n,function(e){if(!e)return;if(e.split)return r.base+e+r.ext;var t=e.src||e.href;typeof r.placeholder=="string"&&e.src&&(e.src=r.placeholder);t&&r.find&&(t=t.replace(r.find,r.replace));return t||null}),s={loaded:0,failed:0,next:0,done:0,total:i.length};if(!s.total)return f();var o=e(Array(r.threshold+1).join("<img/>")).load(u).error(u).bind("abort",u).each(a)};t.gap=14;t.cache=[];t.defaults={threshold:2,base:"",ext:"",replace:""};e.fn.preload=function(e){t(this,e);return this}})(jQuery);
