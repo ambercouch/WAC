@@ -1803,7 +1803,7 @@ img.ui-datepicker-trigger {
   position: absolute;
   bottom: 4%;
   right: 2%;
-  padding: 0.5em;
+  padding: 0.3em;
   font-size: 85%;
   background-color: #ffe464;
   /* Saf4+, Chrome */
@@ -1852,6 +1852,9 @@ img.ui-datepicker-trigger {
 @media only screen and (min-width: 970px) {
   .cottage-features {
     font-size: 1.25rem;
+  }
+  .cottage-features .comparison-link {
+    padding: 0.5em;
   }
 }
 /* =============================================================================
