@@ -416,6 +416,7 @@ body {
 #wrap {
   margin: 0 auto;
   width: 95.83333%;
+  max-width: 100%
   /* 920px / 960px - allowing 20px each side before browser chrome */
 }
 @media only screen and (min-width: 768px) {
@@ -444,6 +445,7 @@ body {
   position: relative;
   margin: 10px auto 0;
   z-index: 1000;
+  width: 100%;
 }
 #banner .container {
   position: relative;
@@ -459,6 +461,7 @@ body {
           align-items: center;
   -webkit-box-pack: justify;
           justify-content: space-between;
+          max-width: 100%;
 }
 @media only screen and (min-width: 768px) {
   #banner .container {
@@ -746,12 +749,13 @@ Presentation
 #presentation {
   position: relative;
   float: left;
-  width: 100%;
-  height: 0;
-  padding-bottom: 34.375%;
+  width: 104.6%;
+  height: 34.5vw;
   background-color: #222;
   margin: 0 0 1em 0;
   overflow: hidden;
+  left: -2.5%;
+  min-height: 400px;
 }
 #presentation ul {
   list-style: none;
@@ -765,10 +769,15 @@ Presentation
 }
 #presentation ul li {
   margin: 0;
+  min-height: 400px;
+}
+#presentation ul li img :first-child{
+  min-height: 400px;
 }
 #presentation ul li img {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 #presentation ul li .slide-caption {
   font-family: "mr-eaves-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -855,6 +864,7 @@ Presentation
 #content {
   margin-bottom: 24px;
   float: left;
+  max-width: 950px;
 }
 #content .container {
   width: auto;
@@ -864,6 +874,13 @@ Presentation
 .no-slides {
   position: relative;
   top: 2em;
+}
+@media only screen and (min-width: 768px) {
+  #content {
+    margin: auto;
+    margin-bottom: 24px;
+    float: none;
+  }
 }
 /* =============================================================================
  Primary Content
