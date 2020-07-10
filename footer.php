@@ -105,7 +105,7 @@
           },
         ],
     };
-
+    
     CookieControl.load( config );
 </script>
 

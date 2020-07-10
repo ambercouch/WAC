@@ -902,6 +902,9 @@ Presentation
 #main .container h1 + h2 {
   margin-top: 0;
 }
+#main .container > h2 {
+  clear: both;
+}
 /* first h2 after h1 loses top margin */
 #main .container li {
   list-style-position: inside;
@@ -2022,6 +2025,21 @@ body.home h2.strap {
 }
 /* Royal Slider */
 /* captions inherit from .slide-caption class, but we need to add further styles */
+.royalSlider {
+  width: 100% !important;
+  height: 51vw !important;
+  min-height: 300px;
+  max-height: 515px;
+}
+@media only screen and (min-width: 768px) {
+  .royalSlider {
+    height: 34vw !important;
+  }
+}
+.rsOverflow{
+  width: 100% !important;
+  height: 100% !important;
+}
 .rs-slide-caption {
   position: absolute;
   bottom: 0;
@@ -2042,6 +2060,13 @@ body.home h2.strap {
 }
 .rich-snippet {
   display: none;
+}
+.rsImg .rsMainSlideImage{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  margin-top: 0 !important;
+  margin-left: 0 !important;
 }
 /* ==|== wordpress generated classes ========================================
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
@@ -2202,4 +2227,5 @@ body.home h2.strap {
     page-break-after: avoid;
   }
 }
+#
 /*# sourceMappingURL=style-1.css.map */
