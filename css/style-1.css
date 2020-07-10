@@ -693,6 +693,9 @@ h1 {
 .nav-social ul li {
   margin: 0 0 0 1em;
 }
+.nav-social ul li:first-child {
+  margin: 0;
+}
 .nav-social ul li a {
   text-decoration: none;
 }
@@ -775,7 +778,7 @@ Presentation
   min-height: 400px;
 }
 #presentation ul li img {
-  width: 100%;
+  width: 100vw;
   height: auto;
   object-fit: cover;
 }
@@ -1786,7 +1789,8 @@ img.ui-datepicker-trigger {
 }
 .cottage-features h2 {
   margin: 0;
-  display: inline;
+  display: block;
+  margin-top: 20px;
 }
 .cottage-features h2 span {
   font-size: 85%;
