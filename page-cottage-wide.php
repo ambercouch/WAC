@@ -5,21 +5,21 @@ Template Name: Cottages Page - No Sidebar
 ?>
 
 <?php get_header(); ?>
-  
-  <?php 
+
+  <?php
   	// Extract page slug and assign it to a variable
     $pageSlug = $post->post_name;
-    
+
     // Target the appropriate slide folder for the page and assign the path to a variable
  	$filename = 'img/slides/'.$pageSlug;
   ?>
-		
+
     <div id="content" class="<?php echo $roots_options['container_class']; ?> no-slides">
       <div id="main-full" class="<?php echo $roots_options['fullwidth_class']; ?>" role="main">
         <div class="container">
           <?php get_template_part('loop', 'page'); ?>
         </div>
-        
+
           <div id="connect">
         <?php
           // Featured Post
@@ -53,6 +53,6 @@ Template Name: Cottages Page - No Sidebar
         ?>
         </div><!--	connect -->
       </div><!-- /#main -->
-    
+
     </div><!-- /#content -->
 <?php get_footer(); ?>
