@@ -36,8 +36,9 @@
 
 
 	<div class="badges">
-    <a href="https://www.tourismswanseabay.co.uk"><img src="<?php bloginfo('template_url'); ?>/img/logos/winner-en-2019.png" alt="Swansea Bay Tourism Award - 2019 Winner"></a>
-    <a title="Visit Wales 4 and 5 Star Rating" href="https://www.visitwales.com"><img src="<?php bloginfo('template_url'); ?>/img/logos/Visit Wales 4st-5st SELF CATERING.png" alt="Visit Wales"></a>
+    <img alt="Good to go" src="<?php bloginfo('template_url'); ?>/img/logos/good-to-go-green.png" />
+    <a href="http://www.tourismswanseabay.co.uk"><img src="<?php bloginfo('template_url'); ?>/img/logos/sbt-winner-eng.png" alt="Swansea Bay Tourism Award - 2017 Winner"></a>
+    <a title="Visit Wales 4 and 5 Star Rating" href="http://www.visitwales.com"><img src="<?php bloginfo('template_url'); ?>/img/logos/Visit Wales 4st-5st SELF CATERING.png" alt="Visit Wales"></a>
     <a href="#"><img src="<?php bloginfo('template_url'); ?>/img/logos/logo-wifi.png" alt="Free WiFi in all our cottages"></a>
 	</div>
 
