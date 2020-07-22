@@ -2035,11 +2035,11 @@ body.home h2.strap {
   width: 100% !important;
   height: 51vw !important;
   min-height: 300px;
-  max-height: 515px;
+  max-height: calc(100vh - 360px);
 }
 @media only screen and (min-width: 768px) {
   .royalSlider {
-    height: 34vw !important;
+    height: 37vw !important;
   }
 }
 .rsOverflow{
@@ -2242,4 +2242,7 @@ body.home h2.strap {
   }
 }
 
+#content .container {
+  width:100%;
+}
 /*# sourceMappingURL=style-1.css.map */
