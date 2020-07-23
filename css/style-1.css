@@ -84,6 +84,7 @@ strong {
 }
 blockquote {
   margin: 1em 40px;
+  clear:both;
 }
 dfn {
   font-style: italic;
@@ -775,7 +776,7 @@ Presentation
   margin: 0;
   min-height: 400px;
 }
-#presentation ul li img :first-child{
+#presentation ul li img:first-child{
   min-height: 400px;
 }
 #presentation ul li img {
@@ -1148,9 +1149,15 @@ Presentation
   margin: 0 20px;
 }
 .cottage-selector {
-  float: right;
-  width: 90%;
-  font-family: "mr-eaves-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  float: none;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .cottage-selector {
+    float: right;
+    width: 90%;
+    font-family: "mr-eaves-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
 }
 .cottage-selector h4 {
   text-align: center;
@@ -1190,13 +1197,13 @@ Presentation
 }
 .cottage-selector ul li a .bed-count {
   float: left;
-  width: 50px;
-  text-indent: 14px;
+  width: 36px;
   margin-top: 2px;
   color: #99B030;
   font-weight: 200;
   font-size: 0.8em;
   font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
 }
 .cottage-selector ul li a:hover {
   color: #222;
@@ -1970,6 +1977,9 @@ img.ui-datepicker-trigger {
 body.home h2.strap {
   margin-top: 0;
 }
+.strap{
+  clear: none !important;
+}
 .ill-map > img {
   max-width: 100%;
   width: 100%;
@@ -2073,6 +2083,11 @@ body.home h2.strap {
   object-fit: cover;
   margin-top: 0 !important;
   margin-left: 0 !important;
+}
+.rsImg{
+  height: 100% !important;
+  margin-top: 0 !important;
+  object-fit: cover;
 }
 /* ==|== wordpress generated classes ========================================
    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
