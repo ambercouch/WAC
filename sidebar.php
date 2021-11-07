@@ -1,4 +1,4 @@
-	<a class="cta button-booknow" href="https://secure.supercontrol.co.uk/availability/availability_grid.asp?ownerID=2599&siteID=12637" onclick="_gaq.push(['_link', 'https://secure.supercontrol.co.uk/availability/availability_grid.asp?ownerID=2599&siteID=12637']); return false;">
+	<a class="cta button-booknow" href="#" data-micromodal-trigger="modal-book" onclick="_gaq.push(['_link', 'https://secure.supercontrol.co.uk/availability/availability_grid.asp?ownerID=2599&siteID=12637']); return false;">
 		<div>
 			<span>book now</span><br>
 			or check availability

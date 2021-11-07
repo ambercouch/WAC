@@ -61,6 +61,24 @@
     <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
   <![endif]-->
 
+<!--  MicroModal-->
+<script src="<?php echo get_template_directory_uri(); ?>/js/libs/micromodal/micromodal.js"></script>
+<script>
+  // MicroModal
+  MicroModal.init({
+    onShow: modal => console.info(`${modal.id} is shown`), // [1]
+    onClose: modal => console.info(`${modal.id} is hidden`), // [2]
+    openTrigger: 'data-micromodal-trigger', // [3]
+    closeTrigger: 'data-modal-book-close', // [4]
+    openClass: 'is-open', // [5]
+    disableScroll: true, // [6]
+    disableFocus: false, // [7]
+    awaitOpenAnimation: false, // [8]
+    awaitCloseAnimation: false, // [9]
+    debugMode: true // [10]
+  });
+</script>
+
 <script src="https://cc.cdn.civiccomputing.com/8.0/cookieControl-8.0.min.js"></script>
 <script>
     var config = {
