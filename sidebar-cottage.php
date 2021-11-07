@@ -2,9 +2,45 @@
 		<h4>Select a Cottage</h4>
 		<ul>
       <li>
+        <a class="nant" href="<?php bloginfo('url'); ?>unique-holiday-cottages/nant-y-plas/">
+          <span class="bed-count">2</span>
+          Nant Y Plas
+        </a>
+      </li>
+      <li>
         <a class="cerbyd" href="<?php bloginfo('url'); ?>unique-holiday-cottages/lloc-llo/">
           <span class="bed-count">4</span>
           Lloc Llo
+        </a>
+      </li>
+      <li>
+        <a class="bywthyn" href="<?php bloginfo('url'); ?>unique-holiday-cottages/bwthyn-y-saer/">
+          <span class="bed-count">4</span>
+          Bwthyn Y Saer
+        </a>
+      </li>
+      <li>
+        <a class="wennol" href="<?php bloginfo('url'); ?>unique-holiday-cottages/hafod-y-wennol/">
+          <span class="bed-count">4</span>
+          Hafod Y Wennol
+        </a>
+      </li>
+      <li>
+        <a class="stabl" href="<?php bloginfo('url'); ?>unique-holiday-cottages/y-stabl-self-catering-cottage/">
+          <span class="bed-count">4</span>
+          Y Stabl
+        </a>
+      </li>
+      <li>
+        <a class="cerbyd" href="<?php bloginfo('url'); ?>unique-holiday-cottages/ty-cerbyd/">
+          <span class="bed-count">4</span>
+          Ty Cerbyd
+        </a>
+      </li>
+      <li>
+        <a class="ysgol" href="<?php bloginfo('url'); ?>unique-holiday-cottages/yr-hen-ysgol/">
+          <span class="bed-count">4</span>
+          Yr Hen Ysgol
         </a>
       </li>
       <li>
@@ -13,28 +49,16 @@
           Ty Gambo
         </a>
       </li>
-			<li>
-        <a class="bywthyn" href="<?php bloginfo('url'); ?>unique-holiday-cottages/bwthyn-y-saer/">
-          <span class="bed-count">4</span>
-          Bwthyn Y Saer
+      <li>
+        <a class="bryn" href="<?php bloginfo('url'); ?>unique-holiday-cottages/bryn-hir/">
+          <span class="bed-count">8</span>
+          Bryn Hir
         </a>
       </li>
-			<li>
-        <a class="wennol" href="<?php bloginfo('url'); ?>unique-holiday-cottages/hafod-y-wennol/">
-          <span class="bed-count">4</span>
-          Hafod Y Wennol
-        </a>
-      </li>
-			<li>
-        <a class="stabl" href="<?php bloginfo('url'); ?>unique-holiday-cottages/y-stabl-self-catering-cottage/">
-          <span class="bed-count">4</span>
-          Y Stabl
-        </a>
-      </li>
-			<li>
-        <a class="cerbyd" href="<?php bloginfo('url'); ?>unique-holiday-cottages/ty-cerbyd/">
-          <span class="bed-count">4</span>
-          Ty Cerbyd
+      <li>
+        <a class="cilybebyll" href="<?php bloginfo('url'); ?>unique-holiday-cottages/plas-cilybebyll/">
+          <span class="bed-count">18</span>
+          Plas Cilybebyll
         </a>
       </li>
 		</ul>

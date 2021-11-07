@@ -469,7 +469,7 @@ function roots_change_mce_options($options) {
 add_filter('tiny_mce_before_init', 'roots_change_mce_options');
 
 //clean up the default WordPress style tags
-add_filter('style_loader_tag', 'roots_clean_style_tag');
+//add_filter('style_loader_tag', 'roots_clean_style_tag');
 
 function roots_clean_style_tag($input) {
   preg_match_all("!<link rel='stylesheet'\s?(id='[^']+')?\s+href='(.*)' type='text/css' media='(.*)' />!", $input, $matches);
