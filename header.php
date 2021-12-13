@@ -81,7 +81,6 @@
 </head>
 
 <div <?php body_class(roots_body_class()); ?>>
-
   <div id="wrap" class="container" role="document">
   	<header id="banner" class="<?php global $roots_options; echo $roots_options['container_class']; ?>" role="banner">
       <div class="container">

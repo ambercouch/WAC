@@ -27,6 +27,7 @@
   <area class="open-popup-link" shape="circle" coords="560,755,30" href="#river" alt="river">
   <area class="open-popup-link" shape="circle" coords="635,800,30" href="#farmyard-cottages" alt="holiday cottages">
   <area class="open-popup-link" shape="circle" coords="330,770,30" href="#estate-woodland" alt="estate woodland">
+  <area class="open-popup-link" shape="circle" coords="400,755,30" href="#plas-cilybebyll" alt="plas cilybebyll">
   <area class="open-popup-link" shape="circle" coords="510,815,30" href="#cottages" alt="cottages">
   <area class="open-popup-link" shape="circle" coords="345,840,30" href="#parkland" alt="parkland">
   <area class="open-popup-link" shape="circle" coords="330,935,30" href="#lodge-field" alt="lodge field">

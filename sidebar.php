@@ -16,7 +16,7 @@
   <script src="https://www.jscache.com/wejs?wtype=cdsratingsonlynarrow&amp;uniq=229&amp;locationId=2056930&amp;lang=en_UK&amp;border=false&amp;shadow=false&amp;backgroundColor=white"></script>
 
 
-	<a href="/index.php?p=4073">
+	<a href="/attractions/">
     <div class="cta location">
     	discover<br><span>places to visit</span>
     </div>
@@ -28,7 +28,7 @@
 <!--    </div>-->
 <!--  </a>-->
 
-  <a href="/index.php?p=17">
+  <a href="/unique-holiday-cottages/">
     <div class="cta tour">
     	choose your<br><span>holiday cottage</span>
     </div>

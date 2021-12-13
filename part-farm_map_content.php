@@ -128,6 +128,12 @@ coal industries over the past 200 years, as one of the main cradles of the indus
   <p>Many wonderful varieties of tree have been planted at Plas Farm over the centuries, making it a wonderful place to enjoy autumn colours.  There are a mixture of exotics and native trees.  The British Isles has 34 native tree species, 27 of which have been spotted growing at Plas Farm.  Over 60 bird species have been noted and 20 types of butterfly!</p>
 </div>
 
+<div id="plas-cilybebyll" class="pin mfp-hide clearfix">
+  <img src="<?php bloginfo('template_url'); ?>/img/photos/plas-cilybebyll.jpg" alt="plas cilybebyll">
+  <h2>Plas Cilybebyll</h2>
+  <p>French chateau-style Welsh manor with a history spanning centuries. Exceptionally photogenic and a wonderful location for family get togethers and events</p>
+</div>
+
 <div id="cottages" class="pin mfp-hide clearfix">
   <img src="<?php bloginfo('template_url'); ?>/img/photos/cottage-complex-20.jpg" alt="cottages">
   <h2>Holiday Cottages</h2>
