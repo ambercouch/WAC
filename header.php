@@ -4,6 +4,7 @@
 <!--[if IE 8]>    <html class="no-js ie8 oldie" <?php language_attributes(); ?>> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
+  <meta name="google-site-verification" content="9gWHexoFKRRiI9Fw45IABSJSj6GuFRW_KkP1d3NrFnI" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <?php roots_stylesheets(); ?>
