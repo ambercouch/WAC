@@ -35,10 +35,35 @@
   <script type="text/javascript" src="http://use.typekit.com/xxr1gfe.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-  <?php // analytics ?>
+  <!-- GA 4 -->
+  <!-- Cookie control ga v4 https://www.civicuk.com/blog-item/simplify-cookie-control-set-google-consent-mode -->
+
+
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');    ga('create', 'UA-341586-3', 'walescottages.com', {'allowLinker': true});    ga('require', 'linker');    ga('linker:autoLink', ['secure.supercontrol.co.uk']);    ga('send', 'pageview');
+      // Include the following lines to define the gtag() function when
+      // calling this code prior to your gtag.js or Tag Manager snippet
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+
+      // Call the default command before gtag.js or Tag Manager runs to
+      // adjust how the tags operate when they run. Modify the defaults
+      // per your business requirements and prior consent granted/denied, e.g.:
+      gtag('consent', 'default', {
+          'ad_storage': 'denied',
+          'analytics_storage': 'denied'
+      });
   </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M7251DPRW7"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-M7251DPRW7');
+  </script>
+
   <script type='application/ld+json'>
 {
   "@context": "http://www.schema.org",

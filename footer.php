@@ -78,7 +78,7 @@
     debugMode: true // [10]
   });
 </script>
-
+  <!-- Cookie control ga v4 https://www.civicuk.com/blog-item/simplify-cookie-control-set-google-consent-mode -->
 <script src="https://cc.cdn.civiccomputing.com/8.0/cookieControl-8.0.min.js"></script>
 <script>
     var config = {
@@ -98,30 +98,36 @@
             updated : '28/05/2018'
           },
         optionalCookies: [
-        {
-            name : 'analytics',
-            label: 'Analytical Cookies',
-            description: 'Analytical cookies help us to improve our website by collecting and reporting information on its usage.',
-            cookies: ['_ga', '_gid', '_gat', '__utma', '__utmt', '__utmb', '__utmc', '__utmz', '__utmv'],
-            initialConsentState : "ON",
-            onAccept : function(){
-                // Add Google Analytics
-                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            {
+                name: 'analytics',
+                label: 'Google Analytics',
+                description: 'Analytical cookies help us to improve our website by collecting and reporting information on its usage.',
+                cookies: ['_ga', '_gid', '_gat', '__utma', '__utmt', '__utmb', '__utmc', '__utmz', '__utmv'],
+                onAccept: function(){
+                    //GA4
+                    gtag('consent', 'update', {'analytics_storage': 'granted'});
 
-                ga('create', 'UA-341586-3', 'auto');
-                ga('send', 'pageview');
-                // End Google Analytics
-            },
-            onRevoke: function(){
-                // Disable Google Analytics
-                window['ga-disable-UA-341586-3'] = true;
-                // End Google Analytics
+                    //GAU
+                    // Add Google Analytics
+                    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+                    ga('create', 'UA-341586-3', 'auto');
+                    ga('send', 'pageview');
+                    // End Google Analytics
+                },
+                onRevoke: function(){
+
+                    //GA4
+                    gtag('consent', 'update', {'analytics_storage': 'denied'});
+
+                    //GAU
+                    window['ga-disable-UA-341586-3'] = true;
+                }
             }
-          },
-        ],
+        ]
     };
 
     CookieControl.load( config );
