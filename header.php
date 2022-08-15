@@ -114,9 +114,9 @@
       <div tabindex="-1" class="modal__overlay">
         <div class="modal__container" role="dialog" aria-modal="true">
           <header class="modal__header">
-            <h1 id="modal-book-title" class="modal__title">
+            <h4 id="modal-book-title" class="modal__title">
               Book your cottage
-            </h1>
+            </h2>
 
             <button class="modal__button" aria-label="Close modal" data-modal-book-close>close x</button>
           </header>
@@ -143,6 +143,7 @@
           <a href="#" class="nav-reveal">Menu</a>
 
           <nav id="nav-mobile" role="navigation">
+
             <ul>
               <?php wp_nav_menu(array('theme_location' => 'primary_navigation', 'items_wrap' => '%3$s')); ?>
               <li>
@@ -171,6 +172,18 @@
                 </li>
               </ul>
             </nav>
+
+            <div class="mobile-book-button-wrapper">
+            <a
+                class="book-button u-hide--desktop"
+                id="menu-book-your-cottage"
+                href="#"
+                data-micromodal-trigger="modal-book"
+                onclick="_gaq.push(['_link', 'https://secure.supercontrol.co.uk/availability/availability_grid.asp?ownerID=2599&siteID=12637']); return false;"
+            >
+              book your cottage
+            </a>
+            </div>
 
             <nav id="nav-main" role="navigation">
               <ul>

@@ -169,3 +169,8 @@ class fixImageMargins{
     }
 }
 $fixImageMargins = new fixImageMargins();
+
+add_filter( 'wphb_inline_limit_kb', 'adjust_inline_limits' );
+function adjust_inline_limits( $value ) {
+    return 100.0; // Set any value in Kb.
+}
