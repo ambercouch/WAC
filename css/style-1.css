@@ -532,12 +532,18 @@ h1 {
 #nav-main ul li:hover {
   position: relative;
 }
-#nav-main ul li a {
+#nav-main ul li a, .book-button {
   text-decoration: none;
   display: block;
   padding: 0.4em;
   color: #517f9e;
   margin: 0;
+}
+.book-button{
+  display: inline-block;
+}
+.mobile-book-button-wrapper{
+  margin: 0.5em 0;
 }
 #nav-main ul li a:hover,
 #nav-main ul li.current-menu-item > a,
@@ -684,14 +690,22 @@ h1 {
 .nav-social ul {
   display: -webkit-box;
   display: flex;
+
   list-style: none;
   width: 100%;
   -webkit-box-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+          justify-content: center;
   margin-top: 1em;
 }
+@media only screen and (min-width: 768px) {
+  .nav-social ul {
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+  }
+}
+
 .nav-social ul li {
   margin: 0 0 0 1em;
 }
@@ -2261,4 +2275,11 @@ body.home h2.strap {
 #content .container {
   width:100%;
 }
+
+@media only screen and (min-width: 768px) {
+  .u-hide--desktop{
+    display: none !important;
+  }
+}
+
 /*# sourceMappingURL=style-1.css.map */
