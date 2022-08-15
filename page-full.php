@@ -14,7 +14,7 @@ get_header(); ?>
 
           <?php if (is_page(3863)) { // Interactive Map Page ?>
             <div class="ill-map">
-              <img src="<?php get_template_directory_uri() ?>/img/elements/farm-map/illustrated-farm-map-pins.jpg" height="1358" width="960" alt="Plas Farm illustrated map" usemap="#farm-map">
+              <img src="<?php get_template_directory_uri() ?>/img/elements/farm-map/illustrated-farm-map-pins-2022.jpg" height="1358" width="960" alt="Plas Farm illustrated map" usemap="#farm-map">
 
               <?php // load popup imagemaps ?>
               <?php get_template_part('part', 'farm_map_imagemaps'); ?>
@@ -44,7 +44,7 @@ get_header(); ?>
             mainClass: 'mfp-fade',
 
             callbacks: {
-              
+
             }
           });
 
