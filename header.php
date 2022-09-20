@@ -116,7 +116,7 @@
           <header class="modal__header">
             <h4 id="modal-book-title" class="modal__title">
               Book your cottage
-            </h2>
+            </h4>
 
             <button class="modal__button" aria-label="Close modal" data-modal-book-close>close x</button>
           </header>
