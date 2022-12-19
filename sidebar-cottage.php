@@ -57,7 +57,7 @@
       </li>
       <li>
         <a class="cilybebyll" href="<?php bloginfo('url'); ?>unique-holiday-cottages/plas-cilybebyll/">
-          <span class="bed-count">18</span>
+          <span class="bed-count">19</span>
           Plas Cilybebyll
         </a>
       </li>
@@ -89,7 +89,9 @@
   <script src="http://www.jscache.com/wejs?wtype=cdsratingsonlynarrow&amp;uniq=229&amp;locationId=2056930&amp;lang=en_UK&amp;border=false&amp;shadow=false&amp;backgroundColor=white"></script>
 
 	<div class="badges no-border">
-		<a href="http://www.tourismswanseabay.co.uk/"><img src="<?php bloginfo('template_url'); ?>/img/logos/sbt-winner-eng.png" alt="Swansea Bay Tourism Award - 2017 Winner"></a>
-    <a title="Visit Wales 4 and 5 Star Rating" href="http://www.visitwales.com"><img src="<?php bloginfo('template_url'); ?>/img/logos/Visit Wales 4st-5st SELF CATERING.png" alt="Visit Wales"></a>
-    <img src="<?php bloginfo('template_url'); ?>/img/logos/logo-wifi.png" alt="Free WiFi in all our cottages">
+    <img alt="Good to go" src="<?php bloginfo('template_url'); ?>/img/logos/wales-gold-100x100.png" />
+    <a href="http://www.tourismswanseabay.co.uk"><img src="<?php bloginfo('template_url'); ?>/wp-content/themes/roots-shep/img/logos/winner-en-2019.png" alt="Swansea Bay Tourism Award - 2017 Winner"></a>
+    <a title="Visit Wales 4 and 5 Star Rating" href="http://www.visitwales.com"><img src="<?php bloginfo('template_url'); ?>/img/logos/5-star-100x100.png" alt="Visit Wales"></a>
+    <a href="#"><img src="<?php bloginfo('template_url'); ?>/img/logos/logo-wifi.png" alt="Free WiFi in all our cottages"></a>
 	</div>
+
