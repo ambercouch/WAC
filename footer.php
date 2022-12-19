@@ -43,6 +43,17 @@
    </div><!-- #foot-wrap -->
 
 
+  <?php if (! is_front_page()) { ?>
+
+    <!--  Modernizr-->
+    <script src="<?php echo get_template_directory_uri(); ?>/js/libs/modernizr-2.0.6.min.js"></script>
+
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/responsive-tables.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/libs/responsive-tables.js"></script>
+  <?php } ?>
+
+
+
 <?php wp_footer(); ?>
 <?php roots_footer(); ?>
 
@@ -60,6 +71,47 @@
     <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
     <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
   <![endif]-->
+
+
+  <!-- Start booking form modal -->
+  <!--  MicroModal-->
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/js/libs/micromodal/micromodal.css" />
+
+  <div id="modal-book" class="modal micromodal-slide" aria-hidden="true">
+    <div tabindex="-1" class="modal__overlay">
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <h4 id="modal-book-title" class="modal__title">
+            Book your cottage
+          </h4>
+
+          <button class="modal__button" aria-label="Close modal" data-modal-book-close>close x</button>
+        </header>
+        <div class="modal__content">
+          <div
+              data-calendar-key="7503EEE07065C1709D5AD3805FDA574316C93CF45C13C369E0C7C352A80B75A54FBA3F144C82CDB9859377AFDF8A2184">
+            booking form loading...
+          </div>
+          <script>
+              $(document).on('click', '#menu-book-your-cottage, .button-booknow', function () {
+                  console.log('clicked');
+                  $.ajax({
+                      url: 'https://secure.supercontrol.co.uk/components/embed.js',
+                      dataType: 'script',
+                      cache: true, // or get new, fresh copy on every page load
+                      success: function() {
+                          console.log('success')
+                          dispatchEvent(new Event('load'));
+                      }
+                  });
+              })
+
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End booking form modal -->
 
 <!--  MicroModal-->
 <script src="<?php echo get_template_directory_uri(); ?>/js/libs/micromodal/micromodal.js"></script>
