@@ -105,7 +105,7 @@
 
   <?php wp_head(); ?>
   <?php roots_head(); ?>
-
+  <link rel="preload" fetchpriority="high" as="image" href="https://b2571194.smushcdn.com/2571194/assets/2017/10/ty-gambo-kitchen.jpg?lossy=1&strip=1&webp=1" type="image/webp">
 </head>
 
 <body>
