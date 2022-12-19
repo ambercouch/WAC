@@ -125,7 +125,21 @@
                 data-calendar-key="7503EEE07065C1709D5AD3805FDA574316C93CF45C13C369E0C7C352A80B75A54FBA3F144C82CDB9859377AFDF8A2184">
                 booking form loading...
             </div>
-            <script src="https://secure.supercontrol.co.uk/components/embed.js"></script>
+            <script>
+                $(document).on('click', '#menu-book-your-cottage, .button-booknow', function () {
+                    console.log('clicked');
+                    $.ajax({
+                        url: 'https://secure.supercontrol.co.uk/components/embed.js',
+                        dataType: 'script',
+                        cache: true, // or get new, fresh copy on every page load
+                        success: function() {
+                            console.log('success')
+                            dispatchEvent(new Event('load'));
+                        }
+                    });
+                })
+
+            </script>
           </div>
         </div>
       </div>
