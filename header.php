@@ -17,10 +17,8 @@
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/js/libs/magnific/magnific.min.css">
   <?php } ?>
 
-  <script type="text/javascript" src="http://use.typekit.com/xxr1gfe.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-  <!-- GA 4 -->
+
   <!-- Cookie control ga v4 https://www.civicuk.com/blog-item/simplify-cookie-control-set-google-consent-mode -->
 
   <script>

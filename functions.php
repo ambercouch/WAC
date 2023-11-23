@@ -65,7 +65,9 @@ function roots_setup() {
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
   register_nav_menus(array(
     'primary_navigation' => __('Primary Navigation', 'roots'),
-    'utility_navigation' => __('Utility Navigation', 'roots')
+    'utility_navigation' => __('Utility Navigation', 'roots'),
+    'activities_menu' => __('Activities Navigation', 'roots'),
+    'atractions_menu' => __('Attractions Navigation', 'roots'),
   ));
 }
 

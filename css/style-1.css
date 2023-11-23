@@ -2282,4 +2282,36 @@ body.home h2.strap {
   }
 }
 
+.c-svg-map{
+  position: relative;
+}
+
+.c-svg-map__img{
+   position: absolute;
+   left: 0;
+   right: 0;
+ }
+.c-svg-map__svg{
+   position: relative;
+   left: 0;
+   right: 0;
+   z-index: 10;
+ }
+
+.c-svg-map__svg g path{
+  fill: transparent;
+}
+
+.c-image-zoom__img-large{
+  max-width: 100% !important;
+}
+.modal__container.modal__container--flush{
+  padding: 48px 0;
+  width:99vw
+}
+
+.map-instructions{
+  display: none;
+}
+
 /*# sourceMappingURL=style-1.css.map */

@@ -2,7 +2,7 @@
 		<h4>Select a Cottage</h4>
 		<ul>
       <li>
-        <a class="nant" href="<?php bloginfo('url'); ?>unique-holiday-cottages/nant-y-plas/">
+        <a class="nant" href="<?php bloginfo('url'); ?>unique-holiday-cottages/riverside-holiday-cottage/">
           <span class="bed-count">2</span>
           Nant Y Plas
         </a>
@@ -38,7 +38,7 @@
         </a>
       </li>
       <li>
-        <a class="ysgol" href="<?php bloginfo('url'); ?>unique-holiday-cottages/yr-hen-ysgol/">
+        <a class="ysgol" href="<?php bloginfo('url'); ?>unique-holiday-cottages/historic-holiday-cottage/">
           <span class="bed-count">4</span>
           Yr Hen Ysgol
         </a>
@@ -50,7 +50,7 @@
         </a>
       </li>
       <li>
-        <a class="bryn" href="<?php bloginfo('url'); ?>unique-holiday-cottages/bryn-hir/">
+        <a class="bryn" href="<?php bloginfo('url'); ?>unique-holiday-cottages/neighbouring-cottages/">
           <span class="bed-count">8</span>
           Bryn Hir
         </a>

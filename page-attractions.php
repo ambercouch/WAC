@@ -6,7 +6,7 @@ get_header(); ?>
   <?php roots_content_before(); ?>
     <div id="content" class="<?php echo $roots_options['container_class']; ?>">
     <?php roots_main_before(); ?>
-      <div id="main-full" class="<?php echo $roots_options['fullwidth_class']; ?>" role="main">
+      <div id="main" class="<?php echo $roots_options['fullwidth_class']; ?>" role="main">
         <div class="container">
           <?php roots_loop_before(); ?>
           <?php get_template_part('loop', 'page'); ?>
@@ -31,13 +31,23 @@ get_header(); ?>
             <?php endif; ?>
           </div>
 
-          <div class="map-attractions">
-            <img
-                id="magnify-lens"
-                class="img-inline"
-                src="<?php echo get_bloginfo('url') ?>/img/elements/attractions-map/map-attractions-960.jpg"
-                data-zoom-image="<?php echo get_bloginfo('url') ?>/img/elements/attractions-map/map-attractions-1800.jpg"
-                alt="">
+          <div class="">
+            <a href="#" data-micromodal-trigger="modal-the-estate"  class="modal">
+            <img src="<?php echo get_template_directory_uri() ?>/img/elements/attractions-map/map-attractions-960.jpg"  alt="The estate">
+            </a>
+          </div>
+
+          <div id="modal-the-estate" class="modal micromodal-slide" aria-hidden="true">
+            <div tabindex="-1" class="modal__overlay">
+              <div class="modal__container modal__container--flush" role="dialog" aria-modal="true">
+                <header class="modal__header">
+                  <button class="modal__button" aria-label="Close modal" data-modal-book-close>close x</button>
+                </header>
+                <div class="modal__content">
+                  <img class="c-image-zoom__img-large" src="<?php echo get_template_directory_uri() ?>/img/elements/attractions-map/map-attractions-1800.jpg"  alt="The estate">
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="map-key">
@@ -233,6 +243,12 @@ get_header(); ?>
           </div><!-- .map-key-->
         </div><!-- .container -->
       </div><!-- #main -->
+
+      <aside id="sidebar" role="complementary">
+        <div class="container">
+            <?php get_sidebar('attractions'); ?>
+        </div>
+      </aside><!-- /#sidebar -->
 
       <script type="text/javascript">
         $(document).ready(function() {

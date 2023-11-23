@@ -184,6 +184,6 @@
 
     CookieControl.load( config );
 </script>
-
+  <link rel="stylesheet" href="https://use.typekit.net/itx4ddm.css">
 </body>
 </html>
