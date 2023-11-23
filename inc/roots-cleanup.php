@@ -178,7 +178,7 @@ function roots_head_cleanup() {
   remove_action('wp_head', 'noindex', 1);
   add_action('wp_head', 'roots_noindex');
   remove_action('wp_head', 'rel_canonical');
-  add_action('wp_head', 'roots_rel_canonical');
+  //add_action('wp_head', 'roots_rel_canonical');
   add_action('wp_head', 'roots_remove_recent_comments_style', 1);
   add_filter('gallery_style', 'roots_gallery_style');
 

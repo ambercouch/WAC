@@ -5,9 +5,13 @@
     		$pageSlug = $post->post_name;
   ?>
 
+<?php if (types_render_field( 'slider-display', array(  ) )) : ?>
   	<div id="presentation">
       <?php echo(types_render_field( 'slider-display', array(  ) )); ?>
 		</div>
+<?php else : ?>
+<!-- No slider found -->
+<?php endif ?>
 
     <div id="content" class="<?php echo $roots_options['container_class']; ?>">
     <?php roots_main_before(); ?>

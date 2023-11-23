@@ -43,6 +43,17 @@
    </div><!-- #foot-wrap -->
 
 
+  <?php if (! is_front_page()) { ?>
+
+    <!--  Modernizr-->
+    <script src="<?php echo get_template_directory_uri(); ?>/js/libs/modernizr-2.0.6.min.js"></script>
+
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/responsive-tables.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/libs/responsive-tables.js"></script>
+  <?php } ?>
+
+
+
 <?php wp_footer(); ?>
 <?php roots_footer(); ?>
 
@@ -61,6 +72,47 @@
     <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
   <![endif]-->
 
+
+  <!-- Start booking form modal -->
+  <!--  MicroModal-->
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/js/libs/micromodal/micromodal.css" />
+
+  <div id="modal-book" class="modal micromodal-slide" aria-hidden="true">
+    <div tabindex="-1" class="modal__overlay">
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <header class="modal__header">
+          <h4 id="modal-book-title" class="modal__title">
+            Book your cottage
+          </h4>
+
+          <button class="modal__button" aria-label="Close modal" data-modal-book-close>close x</button>
+        </header>
+        <div class="modal__content">
+          <div
+              data-calendar-key="7503EEE07065C1709D5AD3805FDA574316C93CF45C13C369E0C7C352A80B75A54FBA3F144C82CDB9859377AFDF8A2184">
+            booking form loading...
+          </div>
+          <script>
+              $(document).on('click', '#menu-book-your-cottage, .button-booknow', function () {
+                  console.log('clicked');
+                  $.ajax({
+                      url: 'https://secure.supercontrol.co.uk/components/embed.js',
+                      dataType: 'script',
+                      cache: true, // or get new, fresh copy on every page load
+                      success: function() {
+                          console.log('success')
+                          dispatchEvent(new Event('load'));
+                      }
+                  });
+              })
+
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End booking form modal -->
+
 <!--  MicroModal-->
 <script src="<?php echo get_template_directory_uri(); ?>/js/libs/micromodal/micromodal.js"></script>
 <script>
@@ -78,7 +130,7 @@
     debugMode: true // [10]
   });
 </script>
-
+  <!-- Cookie control ga v4 https://www.civicuk.com/blog-item/simplify-cookie-control-set-google-consent-mode -->
 <script src="https://cc.cdn.civiccomputing.com/8.0/cookieControl-8.0.min.js"></script>
 <script>
     var config = {
@@ -98,30 +150,36 @@
             updated : '28/05/2018'
           },
         optionalCookies: [
-        {
-            name : 'analytics',
-            label: 'Analytical Cookies',
-            description: 'Analytical cookies help us to improve our website by collecting and reporting information on its usage.',
-            cookies: ['_ga', '_gid', '_gat', '__utma', '__utmt', '__utmb', '__utmc', '__utmz', '__utmv'],
-            initialConsentState : "ON",
-            onAccept : function(){
-                // Add Google Analytics
-                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            {
+                name: 'analytics',
+                label: 'Google Analytics',
+                description: 'Analytical cookies help us to improve our website by collecting and reporting information on its usage.',
+                cookies: ['_ga', '_gid', '_gat', '__utma', '__utmt', '__utmb', '__utmc', '__utmz', '__utmv'],
+                onAccept: function(){
+                    //GA4
+                    gtag('consent', 'update', {'analytics_storage': 'granted'});
 
-                ga('create', 'UA-341586-3', 'auto');
-                ga('send', 'pageview');
-                // End Google Analytics
-            },
-            onRevoke: function(){
-                // Disable Google Analytics
-                window['ga-disable-UA-341586-3'] = true;
-                // End Google Analytics
+                    //GAU
+                    // Add Google Analytics
+                    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+                    ga('create', 'UA-341586-3', 'auto');
+                    ga('send', 'pageview');
+                    // End Google Analytics
+                },
+                onRevoke: function(){
+
+                    //GA4
+                    gtag('consent', 'update', {'analytics_storage': 'denied'});
+
+                    //GAU
+                    window['ga-disable-UA-341586-3'] = true;
+                }
             }
-          },
-        ],
+        ]
     };
 
     CookieControl.load( config );
