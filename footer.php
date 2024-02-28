@@ -68,7 +68,6 @@
   <?php } ?>
 
   <!--[if lt IE 7]>
-    <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
     <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
   <![endif]-->
 
@@ -93,7 +92,7 @@
             booking form loading...
           </div>
           <script>
-              $(document).on('click', '#menu-book-your-cottage, .button-booknow', function () {
+              $(document).on('click', '#menu-book-your-cottage, .button-booknow, [data-book-popup], [data-micromodal-trigger=modal-book]', function () {
                   console.log('clicked');
                   $.ajax({
                       url: 'https://secure.supercontrol.co.uk/components/embed.js',
