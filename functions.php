@@ -12,6 +12,9 @@ require_once locate_template('/inc/roots-actions.php');     // actions
 require_once locate_template('/inc/roots-widgets.php');     // widgets
 require_once locate_template('/inc/roots-custom.php');      // custom functions
 
+// AmberCouch library
+require_once locate_template('/ac/lib/cpt.php');      // custom functions
+
 $roots_options = roots_get_theme_options();
 
 // set the maximum 'Large' image width to the maximum grid width

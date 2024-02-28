@@ -2314,4 +2314,108 @@ body.home h2.strap {
   display: none;
 }
 
+/*
+ * AC - Cottage features
+ */
+
+.l-feature-list__list{
+   list-style: none;
+   padding: 0;
+   margin: 0;
+ }
+
+.l-feature-list__item{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px !important;
+}
+
+.c-post-thumb__content--feature{
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 12px;
+  grid-template-rows: min-content max-content;
+}
+
+.c-post-thumb__content--feature >*:first-child{
+  grid-column-start: 1;
+  grid-row-end: 4;
+  grid-row-start: 1;
+}
+.c-post-thumb__content--feature >*:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: start; /* Aligns to the start of the grid area */
+  height: min-content; /* or fit-content */
+}
+
+.c-post-thumb__content--feature >*:nth-child(3) {
+  grid-column: 2;
+  grid-row: 2;
+  align-self: start; /* Aligns to the start of the grid area */
+  height: max-content;
+}
+
+.c-feature-image--feature{
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.c-feature-image__img--feature{
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.c-header--feature{
+  margin-bottom: 0 !important;
+}
+
+.c-header__heading--feature{
+  margin-top: 0 !important;
+  font-size: 1.5em;
+}
+
+
+
+.c-post-thumb__content p{
+  margin-top: 0 !important;
+}
+
+.l-feature-list__item:nth-child(even) .c-post-thumb__content--feature{
+  grid-template-columns:  1fr 300px;
+}
+
+.l-feature-list__item:nth-child(even) .c-post-thumb__content--feature > .c-post-thumb__feature-image {
+  grid-column: 2; /* Position on the right-hand side */
+}
+
+.l-feature-list__item:nth-child(even) .c-post-thumb__content--feature > .c-post-thumb__header,
+.l-feature-list__item:nth-child(even) .c-post-thumb__content--feature > .c-post-thumb__content {
+  grid-column: 1; /* Position the other elements on the left-hand side */
+}
+
+.c-info-box--cottage{
+  background: #f0f0f0;
+  padding: 24px;
+}
+
+.c-btn-group{
+  display: inline-flex;
+  gap: 24px;
+}
+
+.u-d-il{
+  display: inline !important;
+}
+.u-fw-b{
+  font-weight: bold;
+}
+.u-col-w{
+  color: #fff;
+}
+.c-sep{
+  display: inline !important;
+  padding: 0 12px;
+}
 /*# sourceMappingURL=style-1.css.map */

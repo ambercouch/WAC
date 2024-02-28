@@ -1,0 +1,25 @@
+<div class="c-post-thumb--feature">
+<article id="post-{{ post.id }}" {{ fn('post_class', 'c-post-thumb__article') }}>
+  <div class="c-post-thumb__content--feature">
+    {% if post.thumbnail %}
+    <div class="post-thumbnail c-post-thumb__feature-image">
+      <div class="c-feature-image--feature">
+        <img class="c-feature-image__img--feature" src="{{ post.thumbnail.src | resize(300,300)}}" />
+      </div>
+    </div><!-- .post-thumbnail -->
+    {% endif %}
+    <div class="post-thumbnail c-post-thumb__header">
+    <header  class="entry-header c-header--feature">
+      <h2 class="entry-title c-header__heading--feature">
+          <span class="c-header__title--feature">{{ post.title }}</span>
+      </h2>
+    </header>
+    </div>
+    {% if post.content %}
+    <div class="c-post-thumb__content"  >
+      {{ post.content }}
+    </div>
+    {% endif %}
+  </div>
+</article>
+</div>
