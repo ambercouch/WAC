@@ -7,75 +7,16 @@
 </a>
 
 <div class="cottage-selector attractions-selector">
-		<h4>Attractions</h4>
-		<ul>
-      <li>
-        <a class="cerbyd" href="<?php echo esc_url(get_bloginfo('url')); ?>/holiday-activities-south-wales/birdwatching-breaks/">
-          birdwatching
-        </a>
-      </li>
-      <li>
-        <a class="bywthyn" href="<?php echo esc_url(get_bloginfo('url')); ?>/holiday-activities-south-wales/mountain-biking-holidays-uk/">
-          mountain biking
-        </a>
-      </li>
-      <li>
-        <a class="stabl" href="<?php echo esc_url(get_bloginfo('url')); ?>/holiday-activities-south-wales/walking-in-south-wales/">
-          walking in south wales
-        </a>
-      </li>
-      <li>
-        <a class="cerbyd" href="<?php echo esc_url(get_bloginfo('url')); ?>/holiday-activities-south-wales/fishing/">
-          fishing
-        </a>
-      </li>
-      <li>
-        <a class="ysgol" href="<?php echo esc_url(get_bloginfo('url')); ?>/holiday-activities-south-wales/beaches-of-south-wales/">
-          beaches
-        </a>
-      </li>
-      <li>
-        <a class="cerbyd" href="<?php echo esc_url(get_bloginfo('url')); ?>/holiday-activities-south-wales/castles-to-visit/">
-          castles to visit
-        </a>
-      </li>
-      <li>
-        <a class="bryn" href="<?php echo esc_url(get_bloginfo('url')); ?>/holiday-activities-south-wales/wales-cycling-holidays/">
-          cycling
-        </a>
-      </li>
-      <li>
-        <a class="cilybebyll" href="<?php echo esc_url(get_bloginfo('url')); ?>/holiday-activities-south-wales/museums/">
-          museums
-        </a>
-      </li>
-      <li>
-        <a class="cilybebyll" href="<?php echo esc_url(get_bloginfo('url')); ?>/holiday-activities-south-wales/waterfall-country/">
-          waterfall country
-        </a>
-      </li>
-      <li>
-        <a class="cilybebyll" href="<?php echo esc_url(get_bloginfo('url')); ?>/holiday-activities-south-wales/dylan-thomas-trail/">
-          dylan thomas trail
-        </a>
-      </li>
-      <li>
-        <a class="cilybebyll" href="<?php echo esc_url(get_bloginfo('url')); ?>/holiday-activities-south-wales/horse-riding/">
-          horse riding
-        </a>
-      </li>
-      <li>
-        <a class="cilybebyll" href="<?php echo esc_url(get_bloginfo('url')); ?>/holiday-activities-south-wales/countryside-and-parks/">
-          countryside and parks
-        </a>
-      </li>
-      <li>
-        <a class="cilybebyll" href="<?php echo esc_url(get_bloginfo('url')); ?>/holiday-activities-south-wales/adventure-activities/">
-          adventure activities
-        </a>
-      </li>
-		</ul>
-	</div>
+  <h4>Atractions</h4>
+    <?php
+    // Display the "Activities" menu
+    wp_nav_menu(array(
+        'theme_location' => 'atractions_menu', // Replace with the actual menu location name
+        'menu_class' => 'c-nav-menu--activities', // CSS class for the menu
+        // You can add more parameters here if needed
+    ));
+    ?>
+</div>
 
 	<?php wp_reset_query(); ?>
 
@@ -90,9 +31,9 @@
 <script src="https://www.jscache.com/wejs?wtype=cdsratingsonlynarrow&amp;uniq=229&amp;locationId=2056930&amp;lang=en_UK&amp;border=false&amp;shadow=false&amp;backgroundColor=white"></script>
 
 
-<a href="/attractions/">
+<a href="/holiday-activities-south-wales/">
   <div class="cta location">
-    discover<br><span>places to visit</span>
+    discover<br><span>Things to do</span>
   </div>
 </a>
 

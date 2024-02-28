@@ -16,7 +16,7 @@
   <script src="https://www.jscache.com/wejs?wtype=cdsratingsonlynarrow&amp;uniq=229&amp;locationId=2056930&amp;lang=en_UK&amp;border=false&amp;shadow=false&amp;backgroundColor=white"></script>
 
 
-	<a href="/attractions/">
+	<a href="/holiday-attractions-swansea/">
     <div class="cta location">
     	discover<br><span>places to visit</span>
     </div>
