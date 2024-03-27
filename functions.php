@@ -71,6 +71,7 @@ function roots_setup() {
     'utility_navigation' => __('Utility Navigation', 'roots'),
     'activities_menu' => __('Activities Navigation', 'roots'),
     'atractions_menu' => __('Attractions Navigation', 'roots'),
+    'estate_menu' => __('The Estate Navigation', 'roots'),
   ));
 }
 
